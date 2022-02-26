@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import { StyleSheet, Text, View, Button, Alert, TextInput
+ } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default class ejemplo1 extends Component 
+{
+constructor() // permite iniciar variables a nivel global de la clase
+{
+  super(); 
+  //identidica esta clase como la principal
+  //ahora vamos a definir state para almacenar los
+  //contenidos de los componentes
+  this.state=
+  {
+    nombre: "",
+    apellido: ""
+  }
+}  
+
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
